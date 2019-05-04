@@ -4,7 +4,6 @@ Health: health points, when drained to 0, the character is dead
 base: Their base attack
 attack: the amount the character attacks for (friendly heroes only)
 counter: the amount a character will retaliate for (enemy heroes only)
-alignment: Dictates whether a character is neutral(0), friendly (1), or enemy (-1)
 */
 var characters = {
     char1 : {
@@ -13,7 +12,6 @@ var characters = {
         base: 20,
         attack : 20,
         counter : 15,
-        alignment : 0,
     },
 
     char2 : {
@@ -22,7 +20,6 @@ var characters = {
         base: 8,
         attack : 8,
         counter : 30,
-        alignment : 0,
     },
 
     char3 : {
@@ -31,7 +28,6 @@ var characters = {
         base : 30,
         attack : 30,
         counter : 10,
-        alignment : 0,
     },
 
     char4 : {
@@ -40,17 +36,27 @@ var characters = {
         base : 10,
         attack : 10,
         counter : 20,
-        alignment : 0,
-
     }
 }
 
+var char_list = [char1, char2, char3, char4];
 
-//function for selecting your hero and delegating enemy status to other characters
-$(".hero").click(function (e){
-    var selected = {...characters[e.target.id]};
-    console.log(selected);
-    //console.log(e);
+//function for actions relating to clicking on character, mainly selection/delegation
+$(".portrait").click(function (e){
+    //Checks if heroes are neutral and delegates them to proper team
+    if (e.target.parentElement.classList.contains("neutral")){
+        console.log(characters[e.target.id]);
+        e.target.parentElement.classList.replace("neutral", "chosen");
+
+        var neutrals = document.getElementsByClassName("neutral");
+
+        for (var i = neutrals.length; i > 0; i--) {
+            neutrals[0].classList.replace("neutral", "enemy");
+            console.log(neutrals);
+            console.log(i);
+          }
+    }
+
 });
 
 

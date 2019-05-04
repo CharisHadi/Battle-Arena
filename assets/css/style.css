@@ -1,0 +1,19 @@
+.herocard{
+    float:left;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.neutral{
+    border-style: solid;
+    border-color: #666666;
+    vertical-align: -webkit-baseline-middle;
+    /* border inset? */
+}
+.chosen{
+    border-style: solid;
+    border-color: green;
+}
+.enemy{
+    border-style: solid;
+    border-color:red;
+}

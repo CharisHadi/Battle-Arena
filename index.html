@@ -2,13 +2,29 @@
 <html lang="en-us">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel = "stylesheet" type = "text/css" href = "assets/css/style.css">
 </head>
 <body>
-<div class = "hero" id = "char1">char 1</div>
-<div class = "hero" id = "char2">char 2</div>
-<div class = "hero" id = "char3">char 3</div>
-<div class = "hero" id = "char4">char 4</div>
+<section class="row">
+
+    <div class = "herocard neutral">
+        <img id = "char1" class = "portrait" src = "assets/images/Captain.png">
+    </div><!--
+
+    --><div class = "herocard neutral">
+        <img id = "char2" class = "portrait" src = "assets/images/Commando.png">
+    </div><!--
+
+    --><div class = "herocard neutral">
+        <img id = "char3" class = "portrait" src = "assets/images/Huntress.png">
+    </div><!--
+
+    --><div class = "herocard neutral">
+    <img id = "char4" class = "portrait" src = "assets/images/Engineer.png">
+    </div>
+
+</section>
 
 <button onclick = "attack(char1, char4)">Attack</button>
 
