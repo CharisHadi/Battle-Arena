@@ -17,3 +17,33 @@
     border-style: solid;
     border-color:red;
 }
+
+h1{
+    color:#ffffff;
+}
+h6{
+    color:#ffffff;
+    background-color: rgb(64, 64, 64);
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+body{
+    background-image: url("../images/background.png")
+}
+
+.header{
+    text-align:center;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align:center;
+}
+
+button{
+    width: 80px;
+    height: 80px;
+}
