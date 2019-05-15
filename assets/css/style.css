@@ -1,7 +1,8 @@
 .herocard{
     float:left;
-    margin-right: 8px;
-    margin-left: 8px;
+    background-color: rgb(64, 64, 64);
+    margin-right: 15px;
+    margin-left: 15px;
 }
 .neutral{
     border-style: solid;
@@ -17,14 +18,23 @@
     border-style: solid;
     border-color:red;
 }
+.defender{
+    border-style: solid;
+    border-color: black;
+}
 
+p{
+    color:#ffffff;
+    text-align: center;
+    margin-bottom: 0px;
+}
 h1{
     color:#ffffff;
 }
 h6{
     color:#ffffff;
     background-color: rgb(64, 64, 64);
-    margin-bottom: 0px;
+    margin-bottom: 1px;
     text-align: center;
 }
 
